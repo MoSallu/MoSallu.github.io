@@ -1,0 +1,277 @@
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(21, 85%, 54%);
+    padding: 25px;
+    
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.nav-links>a{
+  color: black;
+
+    text-decoration: none;
+    
+
+}
+.grid-container,.bye-bye{
+    font-size: 18px;
+}
+.header + img {
+    border: 1px solid red;
+    
+}
+img[alt="Picture of nature"] {
+    border: 3px solid green;
+   
+}
+.about ~ div {
+    background-color: lightgray;
+    
+}
+
+
+
+.header{
+    text-align: center;
+    color:hsl(120, 100%, 15%);
+
+}
+#myself{
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 25%;
+    float: right;
+    border: 3px solid goldenrod;
+
+}
+p>a:hover{
+    color: red;
+    font-size: 20px; 
+    border-radius: 2%;
+    border: 2px solid black;
+}
+.intro>p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 20px;
+    color: hsl(0, 0%, 10%);
+    
+    
+}
+.about>video{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top: 360px;
+    float:left;
+}
+.about>.hobbies{
+    padding-right:450px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+}
+.text>ol{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column; 
+     
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    float: left;
+}
+iframe{
+
+    float: right;
+    padding-top: 0px;
+    padding-right: 0px;
+
+}
+#collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 20px;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto ;
+
+}
+ .photos-collections{
+    
+    
+    list-style-type: none;
+    border: 10px solid gray;
+    padding:10px;
+    
+
+}
+
+ .cars-collection{
+     
+    list-style-type: none;
+    border: 10px solid gray;
+    padding:10px;
+    
+    
+    
+
+}
+ .video-collection{
+    
+    list-style-type: none;
+    border: 10px solid gray;
+    padding:10px;
+    
+   
+    
+
+}
+.Second-slide{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "main sidebar";
+    height: 70vh;
+    width: 100vw;
+    
+
+}
+.social{
+    grid-area: main;
+    padding: 150px;
+    text-align: center;
+    
+}
+aside{
+    grid-area: sidebar;
+    padding: 150px;
+    text-align: center;
+    color: black;
+}
+.bye-bye{
+    padding: 20px;
+    margin-top :auto ;
+    text-align: center;
+}
+body{
+    background-color: burlywood;
+}
+
+/* phone-view */
+@media only screen and (max-width: 600px) {
+    .main-body {
+        /* display: flex;
+        flex-direction: column; */
+        font-size: 14px;
+    }
+    #collection {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+    }
+    .header + img {
+        border-width: 1px;
+    }
+    img[alt="Picture of nature"] {
+        border-width: 3px;
+    }
+    .about > video {
+        padding-top: 0;
+    }
+    .about > .hobbies {
+        padding-right: 0;
+    }
+    .text > ol {
+        padding-left: 10px;
+    }
+    
+}
+/* tablet-view */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #collection {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 5px;
+    }
+    img[alt="Picture of nature"] {
+        border-width: 2px;
+    }
+    .about > video {
+        padding-top:20px;
+    }
+    .about > .hobbies {
+        padding-right: 20px;
+    }
+    .text > ol {
+        padding-left: 20px;
+    }
+
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.general-knowledge-form {
+    display: flex;
+    justify-content: center;
+}
+
+.general-knowledge-form form {
+    width: 80%;
+    max-width: 600px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.general-knowledge-form form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.general-knowledge-form form input,
+.general-knowledge-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.general-knowledge-form form input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.general-knowledge-form form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+#footer{
+    background-color: hsl(271, 76%, 93%);
+
+}
+#finishButton{
+    background-color: black;
+}
